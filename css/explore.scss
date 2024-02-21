@@ -1,0 +1,56 @@
+@use "./main.scss";
+
+.explore {
+  background-color: #fafafa;
+  padding-top: 50px;
+  .explore-content {
+    position: relative;
+    padding: 0 7.5px 15px;
+    .explore-img {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+    .btn {
+      position: absolute;
+      bottom: 35px;
+      left: 35%;
+      .banner-btn-2 {
+        a {
+          font-size: 13px;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .explore-logo {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    ul{
+        li{
+            width: 13%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+        }
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.mb-35-explore {
+  margin-bottom: 35px;
+}

@@ -1,0 +1,126 @@
+@use './main.scss';
+
+.new-arrivals{
+    .sec-title{
+        padding: 0 0 35px;
+        margin: 0;
+        p{
+           font-size: 15px;
+           margin: 5px 0 0 0;
+           font-weight: 300;
+           letter-spacing: 0.02em;
+        }
+    }
+    .arrival-content{
+        .arrival-img{
+            overflow: hidden;
+            object-fit: cover;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .arrival-details{
+            padding: 0 10px 10px;
+            margin: 0 0 30px;
+            a{
+                font-size: 14px;
+                color: #111;
+                font-weight: 500;
+                display: block;
+                margin: 10px 0 0;
+            }
+            span{
+                font-size: 15px;
+                color: #000;
+                font-weight: 400;
+                display: inline-block;
+                margin: 10px 0 0;
+            }
+            .effective-price{
+                color: #e22515;
+                .sale{
+                    margin: 0 4px 0 0;
+                    color: #333;
+                    opacity: .6;
+                }
+            }
+            .review{
+                .star{
+                    margin: 6px 0 0;
+                    i{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .color-box{
+                width: 17px;
+                height: 17px;
+                border: 2px solid #fff;
+                border-radius: 30px;
+                margin: 3px;
+                box-shadow: 0 0 1px 1px #ddd;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    border: .8px solid #000;
+                }
+            }
+            .color{
+                margin: 7px 0 0;
+                ul{
+                    li{
+                        display: inline-block;
+                        .color1{
+                            @extend .color-box;
+                            background-color: #a9d1e9;
+                        }
+                        .color2{
+                            @extend .color-box;
+                            background-color: #bfdbc9;
+                        }
+                        .color3{
+                            @extend .color-box;
+                            background-color: #c3b1e1;
+                        }
+                        .color4{
+                            @extend .color-box;
+                            background-color: #e1c3e0;
+                        } 
+                        .color5{
+                            @extend .color-box;
+                            background-color: #a8a46b;
+                        }
+                        .color6{
+                            @extend .color-box;
+                            background-color: #000;
+                        }
+                        .color7{
+                            @extend .color-box;
+                            background-color: #f7665f;
+                        }
+                        .color8{
+                            @extend .color-box;
+                            background-color: #f5f5dc;
+                        } 
+                        .color9{
+                            @extend .color-box;
+                            background-color: #f7a563;
+                        }
+                        .color10{
+                            @extend .color-box;
+                            background-color: #ffc0cb;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        .banner-btn-1{
+            a{
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+    }
+}

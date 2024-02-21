@@ -1,0 +1,26 @@
+@use './main.scss';
+
+.services{
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    ul{
+        li{
+            padding: 15px;
+            .service-img{
+                display: inline-block;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 15px;
+                }
+            }
+            .service-details{
+                span{
+                    font-size: 13px;
+                    color: #fff;
+                    
+                }
+            }
+        }
+    }
+}

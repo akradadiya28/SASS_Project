@@ -1,0 +1,147 @@
+@use "./main.scss";
+
+@mixin fonts() {
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.26px;
+  font-weight: 300; 
+}
+// topbar
+.topbar {
+  background: main.$black-color;
+  color: main.$white-color;
+  padding: 10px 0;
+
+  p {
+    @include fonts;
+  }
+
+  .lang {
+    img {
+      margin: 0 5px 0 0;
+    }
+
+    span {
+      @include fonts;
+    }
+
+    i {
+      margin: 0 0 0 5px;
+    }
+  }
+  .price {
+    margin: 0 0 0 15px;
+
+    span {
+      @include fonts;
+    }
+
+    i {
+      margin: 0 0 0 5px;
+    }
+  }
+}
+// navbar
+.navbar {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  // menubar
+  .menubar {
+    a {
+      color: #000;
+      i {
+        padding: 10px;
+        font-size: 18px;
+        transition: all 0.4s ease-in;
+        &:hover {
+          color: #40b884;
+        }
+      }
+    }
+  }
+  // logo
+  .logo {
+    padding: 20px 18px;
+    img {
+      height: auto;
+      display: block;
+    }
+  }
+  // dropdown
+  .menu {
+    li {
+      padding: 20px 15px;
+      a {
+        color: #111;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in;
+        &:hover {
+          color: #40b884;
+        }
+      }
+      .dropdown-menu, .sub-menu {
+        opacity: 0;
+        visibility: hidden;
+        min-width: 220px;
+        position: absolute;
+        top: 60%;
+        left: -17px;
+        z-index: 999;
+        padding: 25px 30px;
+        background-color: #fff;
+        box-shadow: 0 0 6px #eee;
+        transform: translateY(30px);
+        transition: all 0.3s ease-in-out;
+        .sub-menu{
+          opacity: 0;
+          visibility: hidden;
+          left: 110%;
+          top: -125%;
+        }
+        ul{
+          li{
+            padding: 5px 0;
+            a{
+              color: #000;
+              font-size: 13px;
+              font-weight: 400;
+              text-transform: capitalize;
+              transition: all 0.3s ease-in-out;
+              &:hover{
+                color: #40b884;
+              }
+              span{
+                i{
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dropdown, .sub {
+    position: relative;
+    &:hover .dropdown-menu, .sub:hover .sub-menu{
+      opacity: 1;
+      visibility: visible;
+  }
+  }
+  // icons
+  .icons {
+    a {
+      padding: 10px;
+      color: main.$black-color;
+
+      i {
+        font-size: 16px;
+        transition: all 0.5s ease-in;
+        &:hover {
+          color: #40b884;
+        }
+      }
+    }
+  }
+}
